@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BINANCE TRADE CHART</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/chart.css">
+  <link rel="stylesheet" href="../loader.css">
+</head>
+
+<body>
+  <div id="loading"></div>
+  <h1>BINANCE TRADE CHART</h1>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div id="tradingview_f0dfb"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/AVAXUSD/?exchange=COINBASE"
+        rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget(
+        {
+          "width": 1900,
+          "height": 900,
+          "symbol": "COINBASE:AVAXUSD",
+          "interval": "D",
+          "timezone": "Asia/Kolkata",
+          "theme": "dark",
+          "style": "2",
+          "locale": "in",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "allow_symbol_change": true,
+          "container_id": "tradingview_f0dfb"
+        }
+      );
+    </script>
+  </div>
+  <p class="btn"><a href="../index.html">Back</a></p>
+  <script src="../loader.js"></script>
+  <!-- TradingView Widget END -->
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: right;
+    position: sticky;
+    top: 0px;
+    justify-content: right;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(15, 15, 15);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+#logo {
+    margin: auto;
+    position: sticky;
+
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo h1 {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    position: sticky;
+    font-size: 1.8vw;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: loco;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loco {
+    0% {
+        color: rgb(120, 255, 255);
+    }
+
+    25% {
+        color: rgb(85, 255, 141);
+    }
+
+    50% {
+        color: rgb(182, 255, 194);
+    }
+
+    75% {
+        color: rgb(50, 255, 203);
+    }
+
+    100% {
+        color: rgb(100, 255, 148);
+    }
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1vw;
+    margin: 5px 2px;
+}
+
+#navbar ul li a {
+    color: #ffffff;
+    display: block;
+    padding: 8px 44px;
+    margin: -2px 11px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+    border-radius: 0px;
+    transition: all 0.5s;
+
+}
+
+#navbar ul li a {
+    transition-timing-function: ease-in-out;
+    font-size: 1.5rem;
+
+}
+
+#navbar ul li a:hover {
+    border-radius: 20px;
+    color: rgb(0, 255, 136);
+
+    border-radius: 20px;
+    text-shadow: 0 0 10px #00ff55;
+}
+
+p {
+    width: 1978.93px;
+    background: black;
+    height: 92px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4vw;
+    line-height: 59px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1px;
+    /* margin: -44px 152px 28px 152px;*/
+}
+
+p a {
+    border-radius: 9px;
+    color: #ffc400;
+
+    text-decoration: none;
+    border-radius: 10px;
+    text-shadow: 0px 0px 5px rgb(255, 238, 0);
+    padding: 5px 5px;
+    transition: all 1s;
+
+}
+
+p a:hover {
+    background: none;
+    color: rgb(0, 255, 149);
+    border-radius: 10px;
+    text-shadow: 0px 0px 10px rgb(0, 255, 149);
+}
+
+#about .btn {
+    width: 474.93px;
+    /* height: 60px; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4vw;
+    line-height: 59px;
+    text-align: center;
+    justify-content: center;
+    /* margin: -44px 152px 28px 152px;*/
+}
